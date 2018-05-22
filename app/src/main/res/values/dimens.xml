@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Size -->
+    <dimen name="textSizeSmall">12sp</dimen>
+    <dimen name="textSizeXSmall">13sp</dimen>
+    <dimen name="textSizeMedium">17sp</dimen>
+    <dimen name="textSizeLarge">20sp</dimen>
+    <dimen name="textSizeXLarge">24sp</dimen>
+    <dimen name="textSizeXXLarge">28sp</dimen>
+    <dimen name="textSizeXXXLarge">32sp</dimen>
+
+    <!-- Dividers -->
+    <dimen name="divider_xs">4dp</dimen>
+    <dimen name="divider_s">8dp</dimen>
+    <dimen name="divider_m">12dp</dimen>
+    <dimen name="divider_l">16dp</dimen>
+    <dimen name="divider_xl">20dp</dimen>
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="toolbar_image_padding">10dp</dimen>
+    <dimen name="height_edit_profile_image">100dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+</resources>

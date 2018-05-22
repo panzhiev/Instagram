@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="posts">posts</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="website">Website</string>
+    <string name="bio">Bio</string>
+    <string name="private_information">Private Information</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="dont_have_acc">Don`t have an account? <b>Sign up.</b></string>
+</resources>

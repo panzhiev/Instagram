@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.EditProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar"
+        app:contentInsetStart="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/close_image"
+                style="@style/toolbar_image"
+                android:src="@drawable/ic_close"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/toolbar_title"
+                android:text="@string/edit_profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/close_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                style="@style/toolbar_image"
+                android:src="@drawable/ic_check"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/height_edit_profile_image"
+                android:layout_height="@dimen/height_edit_profile_image"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/divider_m"
+                android:src="@drawable/kotlin_logo" />
+
+            <TextView
+                style="@style/edit_profile_label"
+                android:labelFor="@id/et_name"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/edit_profile_label"
+                android:labelFor="@id/et_username"
+                android:text="@string/username" />
+
+            <EditText
+                android:id="@+id/et_username"
+                style="@style/edit_profile_et"
+                android:hint="@string/username"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/edit_profile_label"
+                android:labelFor="@id/et_website"
+                android:text="@string/website" />
+
+            <EditText
+                android:id="@+id/et_website"
+                style="@style/edit_profile_et"
+                android:hint="@string/website"
+                android:inputType="textWebEditText" />
+
+            <TextView
+                style="@style/edit_profile_label"
+                android:labelFor="@id/et_bio"
+                android:text="@string/bio" />
+
+            <EditText
+                android:id="@+id/et_bio"
+                style="@style/edit_profile_et"
+                android:hint="@string/bio"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/edit_profile_label"
+                android:labelFor="@id/et_bio"
+                android:text="@string/private_information"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/edit_profile_label"
+                android:labelFor="@id/et_email"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/et_email"
+                style="@style/edit_profile_et"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                style="@style/edit_profile_label"
+                android:labelFor="@id/et_phone"
+                android:text="@string/phone" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/edit_profile_et"
+                android:hint="@string/phone"
+                android:inputType="phone" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

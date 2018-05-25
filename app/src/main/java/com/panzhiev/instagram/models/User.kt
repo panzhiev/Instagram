@@ -1,8 +1,9 @@
 package com.panzhiev.instagram.models
 
-class User(val name: String = "",
-           val username: String = "",
-           val website: String = "",
-           val bio: String = "",
-           val email: String = "",
-           val phone: String = "")
+data class User(val name: String = "",
+                val username: String = "",
+                val email: String = "",
+                val website: String? = null,
+                val bio: String? = null,
+                val phone: String? = null,
+                val photo: String? = null)

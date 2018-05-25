@@ -33,6 +33,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/save_image"
                 style="@style/toolbar_image"
                 android:src="@drawable/ic_check"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +64,17 @@
                 android:layout_height="@dimen/height_edit_profile_image"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="@dimen/divider_m"
-                android:src="@drawable/kotlin_logo" />
+                android:src="@drawable/person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_photo"
+                android:id="@+id/tv_change_photo"
+                android:layout_marginTop="@dimen/divider_m"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
 
             <TextView
                 style="@style/edit_profile_label"

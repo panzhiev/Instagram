@@ -17,14 +17,6 @@ class HomeActivity : BaseActivity(0) {
         setupBottomNavigation()
 
         mAuth = FirebaseAuth.getInstance()
-//        mAuth.signInWithEmailAndPassword("panzhiev.timur@gmail.com", "password")
-//                .addOnCompleteListener {
-//                    if (it.isSuccessful) {
-//                        Log.d(TAG, "signIn: success")
-//                    } else {
-//                        Log.e(TAG, "signIn: failure", it.exception)
-//                    }
-//                }
         mAuth.addAuthStateListener {
             if (mAuth.currentUser == null) {
                 startActivity(Intent(this, LoginActivity::class.java))
@@ -36,11 +28,11 @@ class HomeActivity : BaseActivity(0) {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-        if (mAuth.currentUser == null) {
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
-        }
-    }
+//    override fun onStart() {
+//        super.onStart()
+//        if (auth.currentUser == null) {
+//            startActivity(Intent(this, LoginActivity::class.java))
+//            finish()
+//        }
+//    }
 }
